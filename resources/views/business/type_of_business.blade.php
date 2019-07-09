@@ -11,7 +11,7 @@
 
 <form action="{{url('login/business')}}" method="get">
 <label for="">user Name</label>
-<input type="text" name="username" id="">
+<input type="text" name="login_name" id="">
 
 <label for="">Password</label>
 <input type="password" name="password" id="">

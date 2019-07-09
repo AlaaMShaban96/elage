@@ -16,7 +16,7 @@ class CreateBusinessesTable extends Migration
         Schema::create('businesses', function (Blueprint $table) {
             $table->smallIncrements('id');
             $table->string('login_name')->unique();
-            $table->binary('password');
+            $table->string('password');
             $table->string('email');
             $table->boolean('state')->default(1);
             $table->enum('type', ['lab', 'pharmacie','hospital']);

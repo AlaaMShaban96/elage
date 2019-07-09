@@ -10,10 +10,19 @@
 
 
 <form action="{{url('user/')}}" method="get">
-        <button type="submit" class="btn btn-primary">User</button>
+    @csrf
+    <button type="submit" class="btn btn-primary">User</button>
     </form>
+    
     <form action="{{url('business/')}}" method="get">
+        @csrf
         <button type="submit" class="btn btn-primary">Business</button>
+    </form>
+    
+   
+    <form action="{{url('sinup/business')}}" method="get">
+        @csrf
+        <button type="submit" class="btn btn-primary">sinup</button>
     </form>
  
     

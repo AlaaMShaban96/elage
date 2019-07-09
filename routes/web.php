@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('business.login');
 });
-Route::get('user/', "Controller@login");
-Route::get('business/', "Controller@business_veiw");
-Route::get('login/business', "Controller@login_business");
+
+Route::get(          'user/',    "Controller@user_login_veiw");
+Route::get(      'business/',    "Controller@business_login_veiw");
+Route::get( 'login/business',    "Controller@login_business");
+
+Route::get( 'sinup/business',     "BusinessController@view");
+Route::post('business/stor',     "BusinessController@stor");
