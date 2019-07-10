@@ -15,12 +15,12 @@ class BusinessController extends Controller
     }
     public function stor()
     {
-       
         $user= new Business;
         $user->login_name=request()->login_name;
         $user->password=request()->password;
         $user->email=request()->email;
         $user->type=request()->type;
+        $user->img=request()->image->store('img','public');
         $user->save();
         return view('business.login');
     }

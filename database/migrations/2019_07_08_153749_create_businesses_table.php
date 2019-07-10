@@ -17,6 +17,7 @@ class CreateBusinessesTable extends Migration
             $table->smallIncrements('id');
             $table->string('login_name')->unique();
             $table->string('password');
+            $table->string('img');
             $table->string('email');
             $table->boolean('state')->default(1);
             $table->enum('type', ['lab', 'pharmacie','hospital']);

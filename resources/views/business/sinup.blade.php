@@ -3,7 +3,7 @@
 
 <body>
     
-<form action="{{url('business/stor')}}" method="post">
+<form action="{{url('business/stor')}}" method="post" enctype="multipart/form-data">
 @csrf
 <label for=""> user Name</label>
 <input type="text" name="login_name" >
@@ -22,7 +22,8 @@
   <option value="pharmacie">Pharmacie</option>
   <option value="hospital">Hospital</option>
 </select>
-
+<label for=""> img</label>
+<input type="file" name="image">
 <button type="submit" class="btn btn-primary">Submit</button>
 
 

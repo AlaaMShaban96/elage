@@ -21,3 +21,5 @@ Route::get( 'login/business',    "Controller@login_business");
 
 Route::get( 'sinup/business',     "BusinessController@view");
 Route::post('business/stor',     "BusinessController@stor");
+
+Route::post('user/login',"Controller@user_login");
